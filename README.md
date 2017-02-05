@@ -12,16 +12,17 @@ This is an image abstraction search API completed for the FCC backened API chall
 Search for epic memes: /api/imagesearch/epic%20memes
 Example response:
 ```json
-{ img_url: "someurl", 
-  alt_text: "picture of an epic meme",
-  site:"www.imgur.com" 
+{
+ "img_url": "someurl", 
+  "alt_text": "picture of an epic meme",
+  "site":"www.imgur.com" 
 }
 ```
 View your recent searches: /api/recent
 Example response: 
 ```json
 { 
-  term: "epic memes", 
-  when: 2015-12-30T08:39:34.365Z 
+  "term": "epic memes", 
+  "when": "2015-12-30T08:39:34.365Z" 
 }
 ```
