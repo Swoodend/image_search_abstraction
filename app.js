@@ -8,7 +8,7 @@ const index = require('./lib/routes/index.js');
 const recent = require('./lib/routes/recent.js');
 const search = require('./lib/routes/search.js');
 
-mongoose.connect('mongodb://localhost/image_abstraction');
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/image_abstraction');
 
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'lib/views/'));
